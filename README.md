@@ -8,7 +8,13 @@
 ---
 A helper library to facilitate working with APIs
 
-`LaravelApiHelpersCommand` - facilitate caching JSON API responses
+API Get and Post
+
+`public function get(String $url, array $header)`
+
+`public function post(String $url, String $postFields, array $header)`
+
+Laravel API Helper Command - facilitates caching JSON API responses
 
 Example:
 
