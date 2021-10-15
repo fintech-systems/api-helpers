@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "fintech-systems/laravel-api-helpers",
+    "description": "Various helpers to make interacting with APIs easier",
     "keywords": [
-        ":vendor_name",
+        "fintech-systems",
         "laravel",
-        ":package_slug"
+        "laravel-api-helpers"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/fintech-systems/laravel-api-helpers",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Eugene van der Merwe",
+            "email": "eugene@fintechsystems.net",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "FintechSystems\\LaravelApiHelpers\\": "src",
+            "FintechSystems\\LaravelApiHelpers\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "FintechSystems\\LaravelApiHelpers\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "FintechSystems\\LaravelApiHelpers\\LaravelApiHelpersServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LaravelApiHelpers": "FintechSystems\\LaravelApiHelpers\\LaravelApiHelpersFacade"
             }
         }
     },
