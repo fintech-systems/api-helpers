@@ -2,9 +2,9 @@
 
 namespace FintechSystems\LaravelApiHelpers;
 
+use FintechSystems\LaravelApiHelpers\Commands\LaravelApiHelpersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use FintechSystems\LaravelApiHelpers\Commands\LaravelApiHelpersCommand;
 
 class LaravelApiHelpersServiceProvider extends PackageServiceProvider
 {
