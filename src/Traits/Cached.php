@@ -1,8 +1,9 @@
 <?php
 
-trait Cache {
-
-    function checkCachedFileExists() {
+trait Cache
+{
+    public function checkCachedFileExists()
+    {
         if ($this->option('cached')) {
             if (! file_exists($this->cachedFile)) {
                 $this->error("--cached was specified but the file $this->cachedFile does not exist");
@@ -13,5 +14,4 @@ trait Cache {
             return file_get_contents($this->cachedFile);
         }
     }
-    
 }

@@ -2,9 +2,9 @@
 
 namespace FintechSystems\LaravelApiHelpers\Tests;
 
+use FintechSystems\LaravelApiHelpers\LaravelApiHelpersServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use FintechSystems\LaravelApiHelpers\LaravelApiHelpersServiceProvider;
 
 class TestCase extends Orchestra
 {
