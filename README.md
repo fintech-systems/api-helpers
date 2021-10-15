@@ -8,7 +8,9 @@
 ---
 A helper library to facilitate working with APIs
 
-API Get and Post
+API: Delete, Get, Post
+
+`public function delete(String $url, String $postFields, array $header = [])`
 
 `public function get(String $url, array $header)`
 
