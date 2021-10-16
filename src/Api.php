@@ -3,7 +3,7 @@
 namespace FintechSystems\LaravelApiHelpers;
 
 /**
- * An opinioned API class the does get and post
+ * An opinioned CURL class the does delete, get, post
  */
 class Api
 {
