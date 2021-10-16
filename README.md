@@ -23,7 +23,7 @@ Laravel API Helper Command - facilitates caching JSON API responses
 
 Example:
 
-```
+```php
 class UserCommand extends LaravelApiHelpersCommand
 {
     /**
