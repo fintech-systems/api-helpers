@@ -27,7 +27,7 @@ class Api
         $response = curl_exec($curl);
 
         $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        
+
         ray($statusCode);
 
         curl_close($curl);
