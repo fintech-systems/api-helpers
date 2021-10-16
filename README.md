@@ -1,6 +1,6 @@
 # Laravel API Helpers
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/fintech-systems/laravel-api-helpers.svg?style=flat-square)](https://packagist.org/packages/fintech-systems/laravel-api-helpers)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fintech-systems/laravel-api-helpers.svg?style=flat-square)](https://packagist.org/packages/fintech-systems/laravel-api-helpers)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fintech-systems/laravel-api-helpers/run-tests?label=tests)](https://github.com/fintech-systems/laravel-api-helpers/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/fintech-systems/laravel-api-helpers/Check%20&%20fix%20styling?label=code%20style)](https://github.com/fintech-systems/laravel-api-helpers/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/fintech-systems/laravel-api-helpers.svg?style=flat-square)](https://packagist.org/packages/fintech-systems/laravel-api-helpers)
