@@ -7,7 +7,7 @@ namespace FintechSystems\LaravelApiHelpers;
  */
 class Api
 {
-    public function delete(String $url, String $postFields, array $header = [])
+    public function delete(String $url, array $header = [], String $postFields = '')
     {
         $curl = curl_init();
 
@@ -25,6 +25,10 @@ class Api
         ]);
 
         $response = curl_exec($curl);
+
+        $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        
+        ray($statusCode);
 
         curl_close($curl);
 
