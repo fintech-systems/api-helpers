@@ -86,9 +86,16 @@ return [
 
 ## Usage
 
+### Phone number conversion
+
 ```php
-$laravel-api-helpers = new FintechSystems\LaravelApiHelpers();
-echo $laravel-api-helpers->echoPhrase('Hello, FintechSystems!');
+$api = new Api();
+$result = $api->convertWhatsAppNumberToWhmcsPhoneNumber('27823096710');
+expect($result)->toEqual('+27.82 309 6710');
+
+$api = new Api();
+$result = $api->convertWhatsAppNumberToWhmcsPhoneNumber('14085551234');
+expect($result)->toEqual('+1.408-555-1234');
 ```
 
 ## Testing
