@@ -84,28 +84,27 @@ class Api
 
     /**
      * Convert a WhatsApp Number to WHMCS's Phone Number format
-     * 
+     *
      * Convert 14085551234 to +1.408-555-1234
      * Convert 27823096710 to +27.82 309 6710
-     * 
+     *
      */
-    public function convertWhatsAppNumberToWhmcsPhoneNumber($phoneNumber) {
-        if (substr($phoneNumber,0,1 ) == "1") {
+    public function convertWhatsAppNumberToWhmcsPhoneNumber($phoneNumber)
+    {
+        if (substr($phoneNumber, 0, 1) == "1") {
             $countryCode = "+" . substr($phoneNumber, 0, 1) . ".";
 
-            $first = substr($phoneNumber, 1,3) . "-";
-            $second = substr($phoneNumber, 4,3) . "-";
-            $last = substr($phoneNumber, 7,4);
-
+            $first = substr($phoneNumber, 1, 3) . "-";
+            $second = substr($phoneNumber, 4, 3) . "-";
+            $last = substr($phoneNumber, 7, 4);
         } else {
             $countryCode = "+" . substr($phoneNumber, 0, 2) . ".";
 
-            $first = substr($phoneNumber, 2,2) . " ";
-            $second = substr($phoneNumber, 4,3) . " ";
-            $last = substr($phoneNumber, 7,4);
-        }        
+            $first = substr($phoneNumber, 2, 2) . " ";
+            $second = substr($phoneNumber, 4, 3) . " ";
+            $last = substr($phoneNumber, 7, 4);
+        }
 
         return $countryCode . $first . $second . $last;
     }
-
 }
