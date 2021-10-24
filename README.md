@@ -7,9 +7,11 @@
 [![GitHub license](https://img.shields.io/github/license/fintech-systems/laravel-api-helpers)](https://github.com/fintech-systems/laravel-api-helpers/blob/main/LICENSE.md)
 
 ---
-A helper library to facilitate working with APIs
+## A helper library to facilitate working with APIs
 
-API: Delete, Get, Post
+### Whatsapp to WHMCS number conversion
+
+### API: Delete, Get, Post
 
 `public function delete(String $url, array $header = [], String $postFields = '')`
 
