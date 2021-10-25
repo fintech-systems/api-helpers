@@ -33,14 +33,14 @@ it('can post an array to a slack', function () {
     $dotenv->load();
 
     $data = [
-        "token"    => $_ENV['SLACK_TEST_TOKEN'],
-        "channel"  => $_ENV['SLACK_TEST_CHANNEL'],
-        "text"     => "Hello, Foo-Bar channel message.",
+        "token" => $_ENV['SLACK_TEST_TOKEN'],
+        "channel" => $_ENV['SLACK_TEST_CHANNEL'],
+        "text" => "Hello, Foo-Bar channel message.",
         "username" => "tester",
     ];
 
     $headers = [
-        'Content-Type'  => 'application/json;charset=utf-8',
+        'Content-Type' => 'application/json;charset=utf-8',
         'Authorization' => 'Bearer xoxp-517707603539-517317390080-2595346380192-a041335a3cd8eb472e280ad72fcfae4e',
     ];
 
