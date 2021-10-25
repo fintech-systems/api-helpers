@@ -24,9 +24,7 @@ it('can convert 27823096710 to +27.82 309 6710', function () {
     expect($result)->toEqual('+27.82 309 6710');
 });
 
-it('can post an array to a slack', function () {
-    $api = new Api();
-
+it('can post an array to a slack', function () {    
     require 'vendor/autoload.php';
 
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/..");
@@ -38,6 +36,8 @@ it('can post an array to a slack', function () {
         "text" => "Hello, Foo-Bar channel message.",
         "username" => "tester",
     ];
+
+    $api = new Api();
 
     $result = $api->post(
         'https://slack.com/api/chat.postMessage',
