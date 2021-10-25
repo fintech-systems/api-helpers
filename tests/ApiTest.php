@@ -33,9 +33,9 @@ it('can post an array to a slack', function () {
     $dotenv->load();
 
     $data = [
-        "token"    => $_ENV['SLACK_TEST_TOKEN'],
-        "channel"  => $_ENV['SLACK_TEST_CHANNEL'],
-        "text"     => "Hello, Foo-Bar channel message.",
+        "token" => $_ENV['SLACK_TEST_TOKEN'],
+        "channel" => $_ENV['SLACK_TEST_CHANNEL'],
+        "text" => "Hello, Foo-Bar channel message.",
         "username" => "tester",
     ];
 

@@ -6,8 +6,8 @@ namespace FintechSystems\LaravelApiHelpers;
  * An opinioned CURL class the does delete, get, post
  */
 class Api
-{    
-    public function get(String $url, Array $header = [])
+{
+    public function get(String $url, array $header = [])
     {
         $curl = curl_init();
 
@@ -30,7 +30,7 @@ class Api
         return $response;
     }
 
-    public function post(String $url, Array $postFields, Array $header = [])
+    public function post(String $url, array $postFields, array $header = [])
     {
         $curl = curl_init();
 
@@ -54,7 +54,7 @@ class Api
         return $response;
     }
 
-    public function delete(String $url, Array $header = [], Array $postFields = [])
+    public function delete(String $url, array $header = [], array $postFields = [])
     {
         $curl = curl_init();
 
