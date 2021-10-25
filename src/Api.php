@@ -54,7 +54,7 @@ class Api
         return $response;
     }
 
-    public function delete(String $url, array $header = [], array $postFields = [])
+    public function delete(String $url, Array $header = [], String $postFields)
     {
         $curl = curl_init();
 
@@ -67,7 +67,7 @@ class Api
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'DELETE',
-            CURLOPT_POSTFIELDS => http_build_query($postFields),
+            CURLOPT_POSTFIELDS => $postFields,
             CURLOPT_HTTPHEADER => $header,
         ]);
 
