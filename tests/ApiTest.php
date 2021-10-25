@@ -39,11 +39,6 @@ it('can post an array to a slack', function () {
         "username" => "tester",
     ];
 
-    $headers = [
-        'Content-Type'  => 'application/json;charset=utf-8',
-        'Authorization' => 'Bearer xoxp-517707603539-517317390080-2595346380192-a041335a3cd8eb472e280ad72fcfae4e',
-    ];
-
     $result = $api->post(
         'https://slack.com/api/chat.postMessage',
         $data
