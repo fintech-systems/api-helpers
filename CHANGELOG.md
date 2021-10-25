@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-api-helpers` will be documented in this file.
 
+## v0.1.1 - 2021-10-25
+
+- revert previous version
+
 ## v0.1.0 - 2021-10-25
 
 - breaking change POST now accepts and array for postFields instead of a string
