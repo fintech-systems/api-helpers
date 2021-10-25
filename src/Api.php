@@ -54,7 +54,7 @@ class Api
         return $response;
     }
 
-    public function delete(String $url, Array $header = [], String $postFields)
+    public function delete(String $url, array $header = [], String $postFields)
     {
         $curl = curl_init();
 
