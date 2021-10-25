@@ -13,11 +13,11 @@
 
 ### API: Delete, Get, Post
 
-`public function delete(String $url, array $header = [], String $postFields = '')`
-
 `public function get(String $url, array $header)`
 
-`public function post(String $url, String $postFields, array $header = [])`
+`public function post(String $url, Array $postFields, array $header = [])`
+
+`public function delete(String $url, Array $header = [], Array $postFields = [])`
 
 You'll notice the signatures for delete and post are swapped. That's because typically with a Restfull DELETE command you would not need post fields.
 
