@@ -31,9 +31,9 @@ it('can post an Array to a Slack', function () {
     $dotenv->load();
 
     $data = [
-        "token"    => $_ENV['SLACK_TEST_TOKEN'],
-        "channel"  => $_ENV['SLACK_TEST_CHANNEL'],
-        "text"     => "Test 1",
+        "token" => $_ENV['SLACK_TEST_TOKEN'],
+        "channel" => $_ENV['SLACK_TEST_CHANNEL'],
+        "text" => "Test 1",
         "username" => "tester",
     ];
 
@@ -61,7 +61,7 @@ it('can post a String to a Slack', function () {
     $data = "{'channel': '" . $_ENV['SLACK_TEST_CHANNEL'] . "',"
             . "'text': 'Test 2',"
             . "'username': 'tester'}";
-    
+
     $api = new Api();
 
     $result = $api->post(
@@ -69,8 +69,6 @@ it('can post a String to a Slack', function () {
         $data,
         $header
     );
-    
+
     expect(json_decode($result, true)["ok"])->toEqual(true);
 });
-
-

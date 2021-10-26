@@ -33,7 +33,7 @@ class Api
     public function post(string $url, string|array $postFields, array $header = [])
     {
         // gettype($postFields == 'array') ?: $postFields = http_build_query($postFields);
-        
+
         $curl = curl_init();
 
         curl_setopt_array($curl, [
