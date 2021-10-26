@@ -16,7 +16,7 @@ class LaravelApiHelpersServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-api-helpers')            
+            ->name('laravel-api-helpers')
             ->hasViews()
             ->hasMigration('create_laravel-api-helpers_table')
             ->hasCommand(LaravelApiHelpersCommand::class);
