@@ -9,17 +9,13 @@
 ---
 ## A helper library to facilitate working with APIs
 
-### Whatsapp to WHMCS number conversion
+### API: Get, Post, Delete
 
-### API: Delete, Get, Post
+`public function get(string $url, array $header = [])`
 
-`public function get(String $url, array $header)`
+`public function post(string $url, string|array $postFields, array $header = [])`
 
-`public function post(String $url, Array $postFields, array $header = [])`
-
-`public function delete(String $url, Array $header = [], Array $postFields = [])`
-
-You'll notice the signatures for delete and post are swapped. That's because typically with a Restfull DELETE command you would not need post fields.
+`public function delete(string $url, string|array $postFields = '', array $header = [])`
 
 Laravel API Helper Command - facilitates caching JSON API responses
 
@@ -66,29 +62,9 @@ You can install the package via composer:
 ```bash
 composer require fintech-systems/laravel-api-helpers
 ```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="FintechSystems\LaravelApiHelpers\LaravelApiHelpersServiceProvider" --tag="laravel-api-helpers-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="FintechSystems\LaravelApiHelpers\LaravelApiHelpersServiceProvider" --tag="laravel-api-helpers-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
-### Phone number conversion
+### WhatsApp to WHMCS phone number conversion
 
 ```php
 $api = new Api();

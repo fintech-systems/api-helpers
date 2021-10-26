@@ -2,6 +2,13 @@
 
 All notable changes to `laravel-api-helpers` will be documented in this file.
 
+## v0.1.2 - 2021-10-26
+
+- allow union type string|array in post and delete
+- attempt at determining if post type is array then http_build_query() but didn't work
+- make delete and put same signature
+- update readme to show that same signature is sued
+
 ## v0.1.1 - 2021-10-25
 
 - revert previous version

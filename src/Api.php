@@ -7,7 +7,7 @@ namespace FintechSystems\LaravelApiHelpers;
  */
 class Api
 {
-    public function get(String $url, array $header = [])
+    public function get(string $url, array $header = [])
     {
         $curl = curl_init();
 
@@ -30,8 +30,10 @@ class Api
         return $response;
     }
 
-    public function post(String $url, string $postFields, array $header = [])
+    public function post(string $url, string|array $postFields, array $header = [])
     {
+        // gettype($postFields == 'array') ?: $postFields = http_build_query($postFields);
+        
         $curl = curl_init();
 
         curl_setopt_array($curl, [
@@ -54,7 +56,7 @@ class Api
         return $response;
     }
 
-    public function delete(String $url, array $header = [], String $postFields)
+    public function delete(string $url, string|array $postFields = '', array $header = [])
     {
         $curl = curl_init();
 
