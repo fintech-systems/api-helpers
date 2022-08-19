@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-api-helpers` will be documented in this file.
 
+## v0.1.5 - 2022-08-19
+
+- had to come upgrade because Yodlee PHP API needs this weird dependency!
+- upgraded Orchestra testbench to be L9 compatible (version 7)
+- had to remove all packages, upgrade Orchestra, and then add all packages back
+- updated composer.json because url is not laravel-api-helpers but just api-helpers
+- tests failing because no slack API token available on hand but that's fine because 4/6 are passing
+
 ## v0.1.3 - 2021-10-26
 
 - allow union type string|array in post and delete
